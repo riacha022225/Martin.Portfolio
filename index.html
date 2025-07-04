@@ -1,0 +1,71 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Martin Portfolio</title>
+  <link rel="stylesheet" href="MartinStyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!--  JavaScript for logout confirmation -->
+  <script>
+    function confirmLogout(event) {
+      event.preventDefault(); 
+      const confirmLog = confirm("Are you sure you want to logout?");
+      if (confirmLog) {
+        window.location.href = "login.html"; // Redirect only if confirmed
+      }
+      // NOTHING HAPPENED STAY ON PAGE
+      
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="logo">Migs<span>Portfolio</span></div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Projects</a>
+      <a href="login.html" onclick="confirmLogout(event)">Logout</a> 
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>My name is Charles!</h1>
+      <p>I love Allison</p>
+      <a href="products.html" class="button">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="projects">
+    <h2>My Proj</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/lovey1.jpg" alt="Proj 1">
+        <h3>nye</h3>
+        <p>nye nye.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/lovey2.jpg" alt="Project 2">
+        <h3>ble</h3>
+        <p>ble ble.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/lovey3.jpg" alt="Project 3">
+        <h3>di ko alam ano lalagay pa dito</h3>
+        <p>kiss moko.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 by riacha</p>
+  </footer>
+
+</body>
+</html>
