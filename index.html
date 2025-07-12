@@ -1,0 +1,63 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Martin Portfolio</title>
+  <link rel="stylesheet" href="MartinStyle.css" />
+
+  <!-- JavaScript -->
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const user = document.getElementById('username').value;
+        const pass = document.getElementById('password').value;
+
+        if (user === 'Martin' && pass === '01234') {
+          window.location.href = 'homepage.html'; 
+        } else {
+          const errorMsg = document.getElementById('errorMsg');
+          errorMsg.textContent = 'Invalid username or password.';
+          errorMsg.style.color = 'red';
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Marquee Banner -->
+  <div class="marquee-bar">
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+      <img src ="images/grab.jpg" class="grab"/>
+      <img src ="images/grab.jpg" class="grab"/>
+      <img src ="images/grab.jpg" class="grab"/>
+      <img src ="images/grab.jpg" class="grab"/>
+      <img src ="images/grab.jpg" class="grab"/>
+      <img src ="images/grab.jpg" class="grab"/>
+      <img src ="images/grab.jpg" class="grab"/>
+      <img src ="images/grab.jpg" class="grab"/>
+      <img src ="images/grab.jpg" class="grab"/>
+      <img src ="images/grab.jpg" class="grab"/>
+      <img src ="images/grab.jpg" class="grab"/>
+      <img src ="images/grab.jpg" class="grab"/>
+      </marquee>
+      
+  </div>
+
+  <!-- Login Section -->
+  <section class="login-section">
+    <div class="login-box">
+      <h1>Login</h1>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Martin" required />
+        <input type="password" id="password" placeholder="01234" required />
+        <button type="submit">Login</button>
+        <p id="errorMsg"></p>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

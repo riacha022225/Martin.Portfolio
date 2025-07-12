@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Martin Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- ✅ JavaScript for Logout Confirmation -->
+  <script>
+    function confirmLogout(event) {
+      event.preventDefault();
+      const confirmLog = confirm("Are you sure you want to logout?");
+      if (confirmLog) {
+        window.location.href = "index.html";
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="logo">
+      <img src="images/grab.jpg" class="grab"/>
+      </div>
+    <nav>
+      <a href="homepage.html">Home</a>
+      <a href="about me.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="index.html" onclick="confirmLogout(event)">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/proj1.jpg" alt="Project 1">
+        <h3>WANTED NEWSPAPER GROUP MEMBER POSTER</h3>
+        <p>This project is part of our Specialized English Program during our 2nd semester. As a Group
+          we agreed to create a Wanted Newspaper Poster for each member as a creative way to introduce 
+          ourselves in our group website presentation and I'm the one who did the work for every member's wanted newspaper poster. 
+          We design and presented thhese posters using Google Sites to make our website more engaging and personalized for our classmates and professor.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/proj2.jpg" alt="Project 2">
+        <h3>TAMSAFE APP DESIGN</h3>
+        <p>This Project was part of our HCI or Human Computer Interaction subject during the second semester.
+          We were tasked to create and design a prototype. but this desing was only made entirely using Canva.
+        Among all the Projects I've worked on, this one is one of my personal favorites because I dedicated so
+      much time and effort in creating and designing it. The concept of this Project is a Campus Safety Map designed exclusively for 
+    FEU students employees, and professors. The app features and emergency alarm system that users can activate by pressing an alert
+  button whenever they're in danger or need immediate assistance. This idea was inspired by apps like Life 360 and Google Maps,
+ but it's tailored specifically for the FEU community. if you're as Tamaraw, this app is made for you..</p>
+      </div>
+      <div class="project-card">
+        <img src="images/proj3.jpg" alt="Project 3">
+        <h3>SATORU GOJO PHOTOSHOP PAINTING</h3>
+        <p>On my 2nd semester, we were tasked to paint using Photoshop, and as an anime fan, I chose Gojo Satoru from Jujutsu Kaisen and painted it with my own style. It was fun seeing one of my favorite characters slowly come to life on screen.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/proj4.jpg" alt="Project 4">
+        <h3>PPE POSTER</h3>
+        <p>This poster was created during our 1st semester. We were tasked to design a poster and include our personal motto in it. It was a simple activity but a good way to express our values through art.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/proj5.jpg" alt="Project 5">
+        <h3>TYPOGRAPHY COPY PHOTOSHOP</h3>
+        <p>For this activity, we were tasked to watch a typography creation tutorial on YouTube, then recreate it using our own last name. The goal was to make our output look as close as possible to the tutorial’s design.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/proj6.jpg" alt="Project 6">
+        <h3>CREATE A MOVIE BOOK COVER</h3>
+        <p>I created this way back in Senior High School at the University of the East Manila. It was one of our tasks in our Media and Information Literacy (MIL) subject, where we were asked to design a book cover styled like a movie film poster.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/proj7.jpg" alt="Project 7">
+        <h3>MMW FINDING FALLACIES IN MOVIES</h3>
+        <p>I created this during our 2nd semester. Our task was to identify fallacies from a movie, but I added a bit of creativity by designing a layout where I organized and presented the information clearly before submitting it.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/proj8.jpg" alt="Project 8">
+        <h3>NSTP 2 WORK IMMERSION PORTFOLIO</h3>
+        <p>This Project was also one of my favorites, it's a persona lportfolio that I made just this 3rd semester for my NSTP 2 
+          Work Immersion. Through this portfolio, I was able to document all the activities I participated in and reflect on the experience
+          I had during the program. It highlighsts not only the task I accomplished but also the meaningful lessons and realizations I gained along the way.
+        This project is special to me because it represents my growthh and the value I've developed throughout the immersion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 by riacha</p>
+  </footer>
+
+  <!-- INTERNAL CSS -->
+  <style>
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: #00b14f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #fff176;
+}
+
+.grab {
+  height: 55px;
+  width: auto;
+}
+
+nav a {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  opacity: 0.8;
+}
+
+.projects {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  color: #00b14f;
+  margin-bottom: 30px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 7px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.project-card h3 {
+  color: #00b14f;
+  font-size: 1.1rem;
+}
+
+/* Description hidden*/
+.project-card p {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-top: 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Show description */
+.project-card:hover p {
+  opacity: 1;
+  height: auto;
+  margin-top: 5px;
+}
+
+footer {
+  background-color: #00b14f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Tablet layout: 2 per row */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects h2 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+}
+
+/* Mobile layout: 1 per row */
+@media (max-width: 480px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+  </style>
+
+</body>
+</html>
